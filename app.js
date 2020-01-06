@@ -13,7 +13,7 @@ let tj_led = new TJBot(
 );
 
 let arm_raise = tj_arm.raiseArm();
-let arm_lower = tj_arm.armLower();
+// let arm_lower = tj_arm.armLower();
 let arm_back = tj_arm.armBack();
 let arm_wave = tj_arm.wave();
 
