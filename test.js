@@ -1,17 +1,17 @@
-const TJBot = require("tjbot");
+const TJBot = require('tjbot');
 
 let led = new TJBot(
-	["led"],
+	['led'],
 	{},
 	{},
 );
 
 let arm = new TJBot(
-	["servo"],
+	['servo'],
 	{},
 	{}
 );
 
-let shine_blue = led.shine("blue");
+let shine_blue = led.shine('blue');
 
-let armBack = arm.armBack();
+let wave = arm.wave();
