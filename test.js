@@ -1,17 +1,25 @@
-const TJBot = require('tjbot');
+const TJBot = require ('tjbot');
 
-let led = new TJBot(
-	['led'],
-	{},
-	{},
-);
+class TJ {
+	constructor(hardware, settings, credentials) {
+		this.hardware = hardware,
+		this.settings = settings,
+		this.credentials = credentials
+	};
+	
+	arm() {
+		new TJBot(
+			['servo'],
+			{},
+			{}
+		);
+	}
 
-let arm = new TJBot(
-	['servo'],
-	{},
-	{}
-);
+	wave() {
+		this.arm().wave();
+	};
+};
 
-let shine_blue = led.shine('blue');
+let tj = new TJ();
 
-let wave = arm.wave();
+tj.wave();
