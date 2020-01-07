@@ -1,6 +1,6 @@
 const TJBot = require('tjbot');
 
-let arm = new TJbot(
+let arm = new TJBot(
 	['servo'],
 	{},
 	{},

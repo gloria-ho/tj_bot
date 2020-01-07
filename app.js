@@ -4,4 +4,4 @@ tj_listen = require('./listen.js');
 
 tj_led.pulseRandom;
 tj_arm.wave;
-tj_listen.listen;
+tj_listen.listen();
