@@ -19,12 +19,9 @@ let tj = new TJBot(
 	}
 );
 
-led.shine('yellow');
-
 tj.listen((text) => {
+	led.shine('green'); // green to signal beginning of listening
 	console.log(text);
 	tj.stopListening();
+	led.pulse('red', 2.0); // red to signal end of listening
 });
-
-
-led.shine('blue');

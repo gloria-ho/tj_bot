@@ -5,3 +5,7 @@ let arm = new TJbot(
 	{},
 	{},
 );
+
+let raise = arm.raiseArm();
+let back = arm.armBack();
+let wave = arm.wave();
