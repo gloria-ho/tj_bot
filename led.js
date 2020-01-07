@@ -1,7 +1,9 @@
 const TJBot = require('tjbot');
 
-let tj_led = new TJBot(
+let led = new TJBot(
     ['led'],
     {},
     {}
 );
+
+let pulse_random = led.pulse(led.randomColor(), 2.0);

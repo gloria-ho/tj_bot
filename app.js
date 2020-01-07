@@ -1,5 +1,4 @@
-import * as arm from 'arm.js'
-
+tj_led = require('./led.js');
 // const TJBot = require('tjbot');
 
 
@@ -29,5 +28,7 @@ import * as arm from 'arm.js'
 // let led_pulse_blue = tj_led.pulse('blue', 2.0);
 // let led_pulse_red = tj_led.pulse('red', 2.0);
 // let led_pulse_random = tj_led.pulse(tj_led.randomColor(), 2.0);
+// tj_led.led.pulse(tj_let.led.randomColor(), 2.0);
 
-arm.pulse(arm.randomColor(), 2.0);
+tj_led.pulseRandom;
+
