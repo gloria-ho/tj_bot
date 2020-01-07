@@ -1,16 +1,19 @@
-const TJBot = require('tjbot');
+import * as arm from 'arm.js'
 
-let tj_arm = new TJBot(
-    ['servo'],
-    {},
-    {}
-);
+// const TJBot = require('tjbot');
 
-let tj_led = new TJBot(
-    ['led'],
-    {},
-    {}
-);
+
+// let tj_arm = new TJBot(
+//     ['servo'],
+//     {},
+//     {}
+// );
+
+// let tj_led = new TJBot(
+//     ['led'],
+//     {},
+//     {}
+// );
 
 
 
@@ -25,4 +28,6 @@ let tj_led = new TJBot(
 
 // let led_pulse_blue = tj_led.pulse('blue', 2.0);
 // let led_pulse_red = tj_led.pulse('red', 2.0);
-let led_pulse_random = tj_led.pulse(tj_led.randomColor(), 2.0);
+// let led_pulse_random = tj_led.pulse(tj_led.randomColor(), 2.0);
+
+arm.pulse(arm.randomColor(), 2.0);
